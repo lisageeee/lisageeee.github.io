@@ -34,11 +34,16 @@ a:visited {
     text-decoration: none;
 }
 
+body {
+    background-image: url("pink.png");
+}
+
 h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lobster', Georgia, Times, serif;
     text-align: center;
     font-size: 40px;
     color: black;
+    margin-top: 50px;
 }
 
 div {
@@ -46,7 +51,6 @@ div {
     padding-top: 0.1px;
     margin-left: -8px;
     margin-right: -8px;
-    
 }
 
 img {
@@ -57,23 +61,52 @@ img {
     margin-left: 100px;
 }
 
-.about {
-    background-image: url("kyoto.jpg");
+p {
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+}
 
+h2 {
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 75px;
+}
+
+heading {
+    text-align: center;
+    padding: 150px;
+}
+
+.about {
+    
 }
 
 .skills {
-    background-color: lightcoral;
+    background-image: url("blue.png");
 }
 
+.skill {
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    border-radius: 150px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+
+
 .projects {
-    background-color: lightcyan;
+    background-image: url("green.png");
 }
 
 .experience {
-    background-color: lightgoldenrodyellow;
+    background-image: url("purple.png");
 }
 
 .contact {
-    background-color: lightgray;
+    background-image: url("grey.png");
 }
+
