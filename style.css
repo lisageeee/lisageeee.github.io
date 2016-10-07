@@ -44,7 +44,11 @@ a:visited {
 }
 
 body {
-    background-image: url(pink.png);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(lightpink), to(lightblue));
+    background: -webkit-linear-gradient(top, lightpink, lightblue);
+    background: -moz-linear-gradient(top, lightpink, lightblue);
+    background: -ms-linear-gradient(top, lightpink, lightblue);
+    background: -o-linear-gradient(top, lightpink, lightblue);
 }
 
 h1 {
