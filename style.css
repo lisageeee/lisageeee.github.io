@@ -44,22 +44,22 @@ a:visited {
 }
 
 body {
-    background-color: white;
+    background-image: url(pink.png);
 }
 
 h1 {
     font-family: 'Lobster', Georgia, Times, serif;
     text-align: center;
     font-size: 40px;
-    color: black;
+    color: hotpink;
     margin-top: 50px;
 }
 
 div {
     height: 650px;
-    padding-top: 0.1px;
-    margin-left: -8px;
-    margin-right: -8px;
+    background-color: white;
+    border-bottom: 3px dotted pink;
+    padding-top: 10px;
 }
 
 img {
@@ -87,55 +87,31 @@ heading {
 }
 
 .flex {
-/*
-    margin: auto;
-    padding: 50px;
-    width: 75%;
-    max-width: 1250px;
-*/
     margin: 0 auto;
-    padding: 60px 0;
     width: 90%;
-    max-width: 1000px;
-    border-left: 5px dotted white;
-    border-right: 5px dotted white;
-}
-
-.inner {
-    width: 90%;
-    padding: 20%;
-    margin: auto;
+    max-width: 1250px;
+    border-left: 3px solid pink;
+    border-right: 3px solid pink;
 }
 
 .about {
-    background-image: url("pink.png");
-    margin-top: 10px;
-    border-top: 5px dotted white;
+    border-top: 3px solid purple;
 }
 
 .skills {
-    background-image: url("blue.png");
-}
-
-.skill {
     background-color: white;
-    width: 20%;
-    height: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
 }
 
 .projects {
-    background-image: url("green.png");
+    background-color: white;
 }
 
 .experience {
-    background-image: url("purple.png");
+    background-color: white;
 }
 
 .contact {
-    background-image: url("grey.png");
-    border-bottom: 5px dotted white;
+    background-color: white;
+    border-bottom: 3px solid purple;
 }
 
