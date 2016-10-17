@@ -60,29 +60,33 @@ h1 {
 }
 
 div {
-    height: 650px;
+/*    height: 650px;*/
     background-color: white;
     border-bottom: 3px dotted pink;
     padding-top: 10px;
+    overflow: hidden;
 }
 
 img {
-    float: left;
-    width: 30%;
     border-radius: 50%;
-    padding: 50px;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 p {
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
 }
 
 h2 {
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
     font-size: 25px;
+    color: lightblue;
     text-align: center;
-    padding-top: 75px;
 }
 
 heading {
@@ -119,3 +123,9 @@ heading {
     border-bottom: 3px solid purple;
 }
 
+.description {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
