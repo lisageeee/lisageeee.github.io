@@ -137,6 +137,19 @@ heading {
     margin: 1rem;
 }
 
+@media screen and (max-width: 39.9375em) {
+    .circle {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        display: block;
+        border-radius: 50%;
+        background: pink;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+
 .projects {
     background-color: white;
     border-bottom: 3px dotted pink;
