@@ -5,170 +5,63 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    position: fixed;
-    display: flex;
-    width: 100%;
-    padding: 0;
-    background-color: lightblue;
-}
-
-li {
-    float: left;
-    font-family: sans-serif;
-    font-size: 10px;
-}
-
-li a {
-    display: block;
-    padding: 15px;
-}
-
 .font-awesome {
     font-size: 50px !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-a:link, a:visited {
     color: black;
-    background-color: transparent;
-    text-decoration: none;
 }
 
-body {
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(lightpink), to(lightblue));
-    background: -webkit-linear-gradient(top, lightpink, lightblue);
-    background: -moz-linear-gradient(top, lightpink, lightblue);
-    background: -ms-linear-gradient(top, lightpink, lightblue);
-    background: -o-linear-gradient(top, lightpink, lightblue);
-    margin: 0;
+.about-description {
+    max-width: 80%;
 }
 
-h1 {
-    color: hotpink;
-    font-family: 'Lobster', Georgia, Times, serif;
-    text-align: center;
-    font-size: 40px;
-    margin-top: 50px;
+.margin-left-double {
+    margin-left: 2rem;
 }
 
 div {
-    background-color: white;
-    padding-top: 10px;
-    overflow: hidden;
+    background: white;
 }
 
-img {
-/*
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-*/
+.section {
+    border-bottom: 1px solid lightgrey;
+}
+
+code { background-color: gray; color: blue; }
+.var-highlight{
+    color: #C0AD60;
+}
+.string-highlight{
+    color: rgba(253, 149, 90, 0.8);
+}
+.font-size-50 {
+    font-size: 20px !important;
+    margin: 0 auto;
+    display: table;
+    padding-left: 1rem;
+}
+.center {
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-
-.project-image {
-    width: 200px;
+.float-right {
+    float: right !important;
+}
+.align-center {
+    text-align: center !important;
+}
+.mind-the-gap {
     height: 400px;
 }
-
-p {
-    font-family: 'Cabin', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-}
-
-h2 {
-    color: lightblue;
-    font-family: 'Cabin', Helvetica, Arial, sans-serif;
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-h3 {
-    margin-top: 0.5rem;
-}
-
-.flex {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1250px;
-    border-left: 3px solid pink;
-    border-right: 3px solid pink;
-}
-
-.about {
-    border-bottom: 3px dotted pink;
-}
-
-.skills {
-    background-color: white;
-    border-bottom: 3px dotted pink;
-}
-
-.skills-text {
-    padding-top: 2.5rem;
-}
-
-.circles {
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
-}
-
-.circle {
-    width: 150px;
-    height: 150px;
+.inline {
     display: inline-block;
-    border-radius: 50%;
-    background: pink;
-    padding: 1rem;
-    margin: 1rem;
 }
-
-@media screen and (max-width: 39.9375em) {
-    .circle {
-        width: 150px;
-        height: 150px;
-        display: block;
-        border-radius: 50%;
-        background: pink;
-        padding: 1rem;
-        margin: 1rem;
-    }
-}
-
-.projects, .experience {
-    background-color: white;
-    border-bottom: 3px dotted pink;
-}
-
-.contact {
-    background-color: white;
-    border-bottom: 3px solid pink;
-}
-
-.description {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 .project-description {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    max-width: 50%;
 }
-
-.mail {
-    padding-right: 2rem;
+.candoll {
+    height: 200px;
+}
+.padding-right {
+    padding-right: 1rem;
 }

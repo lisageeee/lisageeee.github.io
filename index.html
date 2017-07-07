@@ -1,71 +1,107 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Lisa Gagno</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="app.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/283ad1e874.js"></script>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="X, Y, Z">
-        <meta name="author" content="Lisa Gagno">
-        <!---navbar--->
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
     </head>
     <body>
-        <div id="about" class="about flex">
-            <h1>About Me</h1>
-            <img src="me.jpg">
-            <h2> Hi! I'm Lisa.</h2>
-            <p class="description">I am a 4th year Computer Science student at the University of British Columbia. I also have a previous degree in Economics from the University of Victoria. I am currently a co-op student at SKIO Music working as a full stack software developer.</p>
-            <p class="description">When I am not on the computer you can find me playing piano, eating, or taking photos.</p>
-        </div>
-        <!--Skills-->
-        <div id="skills" class="skills flex">
-            <h1>Skills</h1>
-            <div class="circles">
-                <div class="circle"><p class="skills-text">Java</p></div>
-                <div class="circle"><p class="skills-text">HTML</p></div>
-                <div class="circle"><p class="skills-text">CSS</p></div>
-                <div class="circle"><p class="skills-text">JavaScript</p></div>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+        </nav>
+        <div id="about" class="section">
+            <div class="col-md-4">
+                <img src="me.jpg" class="featurette-image img-responsive float-right img-circle">
+            </div>
+            <div class="col-md-8 lead font-size-50">
+                    <span class="var-highlight">var</span> person = { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;name: <span class="string-highlight">'Lisa Gagno'</span>, <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;type: <span class="string-highlight">'Fourth year computer science student at UBC'</span>, <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;location: <span class="string-highlight">'Vancouver, BC'</span>, <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;skills: [<span class="string-highlight">'Javascript'</span>,
+                        <span class="string-highlight">'AngularJS'</span>,
+                        <span class="string-highlight">'Java'</span>,
+                        <span class="string-highlight">'Python'</span>,
+                        <span class="string-highlight">'HTML'</span>,
+                        <span class="string-highlight">'CSS'</span>];<br>
+                };
             </div>
         </div>
-        <!--Projects-->
-        <div id="projects" class="projects flex">
-            <h1>Projects</h1>
-            <div class="project">
-                <h2>Mind The Gap - Android Project</h2>
-                <p class="project-description">* Integrated the API provided by Transport London to parse JSON data in order to to provide the geo-location of stations and tube lines as well as display real-time arrival information.</p>
-                <p class="project-description">* Designed extensive JUnit tests to ensure code quality.</p>
-                <p class="project-description"><i>Technologies used: Java, IntelliJ, Android SDK, virtualBox, Genymotion, JUnit.</i></p>
-            </div>
-        </div>
-        <!--Experience-->
-        <div id="experience" class="experience flex">
-            <h1>Experience</h1>
-            <a href="http://www.skiomusic.com"><img src="skio.jpeg"></a>
-            <h2>Full Stack Software Development Intern</h2>
-            <center><i><h3>September 2016 - Present</h3></i></center>
-            <p><i>Technologies used: JavaScript, AngularJS, Python, Java, HTML5, CSS3</i></p>
-        </div>
-        <!--Contact-->
-        <div id="contact" class="contact flex">
-            <h1>Contact</h1>
-            <p>Feel free to send me an email or connect with me on LinkedIn.</p>
+        <div id="experience" class="section">
             <center>
-                <a href="mailto:lisagagno@gmail.com"><i class="fa fa-envelope font-awesome mail" aria-hidden="true"></i></a>
+                <h1>Experience</h1>
+                <a href="http://www.skiomusic.com"><img src="skio.jpeg"></a>
+                <div class="project-description">
+                    <h2>Full Stack Software Development Intern</h2>
+                    <i><h3>September 2016 - April 2017</h3></i>
+                    <p>* Designed new and reusable AngularJS components.</p>
+                    <p>* Created REST API endpoints in Python.</p>
+                    <p>* Engineered a service using JavaScript and Python that allows users to import audio hosted on SoundCloud.</p>
+                    <p>* Implemented various pages using HTML, CSS, and JavaScript based on mockups provided by the Design team.</p>
+                    <p><i>Technologies used: JavaScript, AngularJS, Python,HTML5, CSS3</i></p>
+                </div>
+            </center>
+        </div>
+        <div id="projects" class="section">
+            <div>
+                <center><h1>Projects</h1></center>
+                <center>
+                    <div>
+                        <img class="mind-the-gap" src="mindthegap.png">
+                    </div>
+                    <div class="project-description">
+                        <h2>Mind The Gap - Android Project</h2>
+                        <p>* Integrated the API provided by Transport London to parse JSON data in order to to provide the geo-location of subway stations and tube lines as well as display real-time arrival information.</p>
+                        <p>* Designed extensive JUnit tests to ensure code quality.</p>
+                        <p><i>Technologies used: Java, IntelliJ, Android SDK, virtualBox, Genymotion, JUnit.</i></p>
+                    </div>
+                    </center>
+                    <br><br>
+                    <center>
+                    <div>
+                        <img src="breathez.png">
+                    </div>
+                    <div class="project-description">
+                        <h2>Breathe Easy - React.JS Web App</h2>
+                        <p>This is a web application developed during the Axiom Zen/BCS Hack for Diversity Hackathon. Often anxiety is caused by subconsciously hyperventilating. The goal of our app is to reduce people's anxiety by having them follow a visual excercise that teaches them how to properly breathe.</p>
+                        <p><i>Technologies used: JavaScript, HTML, CSS</i></p>
+                        <a href="https://github.com/lisageeee/AxiomZenHackathon">See the code</a>
+                    </div>
+                </center>
+                <br><br>
+                <center>
+                    <div>
+                        <img class="candoll" src="candoll.png">
+                    </div>
+                    <div class="project-description">
+                        <h2>Candoll - Unity Game</h2>
+                        <p>A Unity game I worked on with a team at the 2016 Global Game Jam. In Candoll is a top-down style game where you play as a voodoo doll that is collecting various objects in order to perform a ritual.</p>
+                        <p><i>Technologies used: Unity, C#</i></p>
+                        <a href="https://github.com/GlobalGameJam2016/candoll">See the code</a>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div id="contact" class="section">
+            <center>
+                <h1>Contact</h1>
+                <p>Feel free to send me an email or connect with me on LinkedIn.</p>
+                <a href="mailto:lisagagno@gmail.com"><i class="fa fa-envelope font-awesome mail padding-right" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/lisa-gagno-8169822a"><i class="fa fa-linkedin font-awesome" aria-hidden="true"></i></a>
             </center>
-            <br>
         </div>
     </body>
 </html>
